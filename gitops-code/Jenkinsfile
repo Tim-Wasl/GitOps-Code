@@ -10,8 +10,8 @@ pipeline {
     stage('build') {
       steps {
        
-          sh "./gradlew test jacocoTestReport"
-          sh "./gradlew build " 
+          sh "./gradle test jacocoTestReport"
+          sh "./gradle build " 
       }
     }
   }
